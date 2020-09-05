@@ -21,6 +21,11 @@ namespace admStudentSecurity.Controllers
             return View(db.Students.ToList());
         }
 
+        public object GetStudents()
+        {
+            throw new NotImplementedException();
+        }
+
         // GET: Students/Details/5
         [Authorize]
         public ActionResult Details(int? id)
